@@ -1,0 +1,12 @@
+.feature
+  = image_tag "/images/portfolio/#{feature["picture"]}"
+
+  h3 = feature["name"]
+  span
+    i class="fa fa-link"
+    = link_to feature["url"], feature["url"]
+  ul
+    -feature["tech"].each do |feat|
+     li
+       = feat
+  p = feature["description"]

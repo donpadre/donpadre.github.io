@@ -1,0 +1,8 @@
+dem- data.features.features.each do |feature|
+  .feature
+    = image_tag "/images/portfolio/#{feature.picture}"
+
+    h3 = feature.title
+    span = feature.url
+    p = feature.tech
+    p = feature.description

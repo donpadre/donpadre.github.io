@@ -1,0 +1,14 @@
+---
+title: Portfolio
+title_seo: Don_padre | Portfolio • Mes dernières réalisations.
+description: Veuillez trouver ici tous mes réalisations ou participation à des projets.
+hero_image: plage.jpg
+---
+div role="main"
+
+  = partial "partials/header"
+
+  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+  - data.features.features.each do |feature|
+    = partial "partials/features", locals: { feature: feature}

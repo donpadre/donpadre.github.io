@@ -1,0 +1,40 @@
+---
+title:  Accueil
+title_seo: Don_padre | Accueil • Blogeur & dévellopeur front-end d'origine Guadeloupéen devenu Malouin par adoption.
+description: Don_padre | Blogeur & dévellopeur front-end d'origine Guadeloupéen devenu Malouin par adoption. Amateur de culture High-tech et de culture japonais. Passionné par le web, linux, les mangas, etc ...
+hero_image: plage.jpg
+slogan: Geek for life
+slogan_sup: Geek pour la vie
+---
+div role="main"
+
+  = partial "partials/header"
+
+  h2 Mon première titre sur la page
+  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+  p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+  h3 Le camp
+  = image_tag "/images/avatar.png"
+
+  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  = link_to "Découvrir le camp", "/camp.html"
+
+
+  /= partial "partials/gallerie", locals: {gallery: data.galleries.homepage}
+
+  h2 Mon deuxième titre sur la page
+  ul
+    - data.testimonials.each do |testimonial|
+      li
+        = image_tag "/images/accueil/#{testimonial.picture}"
+        p
+          span = testimonial.name
+          ' ,
+          span = testimonial.age
+          ' ,
+          span = testimonial.town
+        p = testimonial.message
+
+  //= partial "partials/call-to-action"
