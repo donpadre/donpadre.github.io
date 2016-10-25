@@ -1,13 +1,11 @@
 # galleries.yml
 homepage:
-  - randonnee-montagne.jpg
-  - nourriture-biouvac.jpg
-  - cible-arc.jpg
-  - equitation.jpg
-  - barbecue.jpg
-  - escalade.jpg
-  - balade-lac.jpg
-  - bivouac-riviere.jpg
+  - fakeimage_01.png
+  - fakeimage_02.png
+  - fakeimage_03.png
+  - fakeimage_04.png
+  - fakeimage_05.png
+
 
 camp:
   - peche-a-la-ligne.jpg

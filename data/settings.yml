@@ -7,12 +7,13 @@ site:
 author:
   name: Olivier Marie-Joseph
   address: 21 Rue de l'Etrier 35400 Saint-Malo
-  phone: 06 24 51 92 48
+  phone: +33 06 24 51 92 48
   email: contact@donpadre.fr
 
 social:
   facebook: "https://facebook.com/donp971"
   twitter: "https://twitter.com/don_padre"
+  github: "https://github.com/donpadre"
 
 copyright:
   developer:

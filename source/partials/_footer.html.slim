@@ -1,13 +1,11 @@
 / _footer.html.slim
 footer
   div
-    = image_tag "/images/logo.png", alt:"Donpadre"
+
   div role="content-info"
-    p  #{data.settings.author.address}
-    p Tel : #{data.settings.author.phone}
-    p Mail : #{data.settings.author.email}
+
     p
-      ' Suivez nous sur 
+      ' Suivez nous sur
       = link_to "Facebook", data.settings.social.facebook
     p
       ' et sur
@@ -16,13 +14,12 @@ footer
   nav role="navigation"
     ul
       li = link_to "Accueil", "/"
-      li = link_to "Camp", "/camp.html"
-      li = link_to "Equipe", "/equipe.html"
-      li = link_to "Activités", "/activites.html"
+      li = link_to "Portfolio", "/portfolio.html"
       li = link_to "Blog", "/blog.html"
-      li = link_to "Réservation", "/reservation.html"
+      li = link_to "Tutoriaux", "/tutoriaux.html"
+      li = link_to "A propos", "/apropos.html"
+      li = link_to "Contact", "/contact.html"
       li = link_to "Mentions légales", "/mentions-legales.html"
-      li = link_to "Conditions générales de vente", "/cgv.html"
 
   p
     '  &copy;

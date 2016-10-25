@@ -40,6 +40,8 @@ end
 # Helpers
 ###
 
+set :relative_link, true
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper

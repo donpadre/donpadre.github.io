@@ -1,7 +1,5 @@
-# testimonials.yml
-
-- name: Céline
-  age: 36 ans
-  town: Paris
-  picture: celine.jpg
-  message: "Superbe surprise que ce séjour. J’en suis revenue ressourcée, reposée et j’ai considérablement réduit ma dépendance à mon téléphone."
+- name: Olivier
+  age: 33 ans
+  town: Saint-Malo
+  picture: avatar.png
+  message: "Web developer front-end débutant"
