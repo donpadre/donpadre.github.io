@@ -1,0 +1,23 @@
+# settings.yml
+site:
+  title: Don_padre
+  description: "Nous sommes un camp de vancances en pleine nature qui privilègie un retour aux sources en éloignant les nouvelles technologies le temps d'un séjour."
+  url: "http://donpadre.github.io"
+
+author:
+  name: Olivier Marie-Joseph
+  address: 21 Rue de l'Etrier 35400 Saint-Malo
+  phone: 06 24 51 92 48
+  email: contact@donpadre.fr
+
+social:
+  facebook: "https://facebook.com/donp971"
+  twitter: "https://twitter.com/don_padre"
+
+copyright:
+  developer:
+    name: Olivier Marie-Joseph
+    url: "http://www.donpadre.fr"
+
+google_analytics:
+  tracking_code: "Your-tracking-code"
