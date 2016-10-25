@@ -8,6 +8,7 @@ require 'slim'
 #
 # With no layout
 page '/*.xml', layout: false
+page "/feed.xml", layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
@@ -17,6 +18,50 @@ page '/*.txt', layout: false
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
+
+###
+# Blog settings
+###
+
+Time.zone = "Paris"
+I18n.config.enforce_available_locales = false
+
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+ # blog.prefix = "blog"
+   blog.name = "blog"
+   blog.permalink = "/{title}.html"
+ # Matcher for blog source files
+   blog.sources = "{year}-{month}-{day}-{title}.html"
+ # blog.taglink = "tags/{tag}.html"
+   blog.layout = "layouts/blog"
+ # blog.summary_separator = /()/
+ # blog.summary_length = 250
+ # blog.year_link = "{year}.html"
+ # blog.month_link = "{year}/{month}.html"
+ # blog.day_link = "{year}/{month}/{day}.html"
+   blog.default_extension = ".markdown"
+
+   blog.new_article_template = "source/new-article.markdown"
+
+ # blog.tag_template = "tag.html"
+ # blog.calendar_template = "calendar.html"
+
+ # Enable pagination
+   blog.paginate = true
+   blog.per_page = 10
+   blog.page_link = "page/{num}"
+
+ # Custom categories
+   blog.custom_collections = {
+     category: {
+       link: '/categories/{category}.html',
+       template: '/category.html'
+     }
+   }
+end
+
+
 
 
 # General configuration
