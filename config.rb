@@ -7,10 +7,8 @@ require 'slim'
 # Per-page layout changes:
 #
 # With no layout
-page '/*.xml', layout: false
 page "/feed.xml", layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
+
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -22,6 +20,7 @@ page '/*.txt', layout: false
 ###
 # Blog settings
 ###
+activate :directory_indexes
 
 Time.zone = "Paris"
 I18n.config.enforce_available_locales = false
@@ -30,9 +29,9 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
  # blog.prefix = "blog"
    blog.name = "blog"
-   blog.permalink = "/{title}.html"
+   blog.permalink = "/blog/{year}-{month}-{day}-{title}.html"
  # Matcher for blog source files
-   blog.sources = "{year}-{month}-{day}-{title}.html"
+   blog.sources = "/blog/{year}-{month}-{day}-{title}.html"
  # blog.taglink = "tags/{tag}.html"
    blog.layout = "layouts/blog"
  # blog.summary_separator = /()/
@@ -42,15 +41,15 @@ activate :blog do |blog|
  # blog.day_link = "{year}/{month}/{day}.html"
    blog.default_extension = ".markdown"
 
-   blog.new_article_template = "source/new-article.markdown"
+ # blog.new_article_template = "sources/new-article.html.markdown"
 
  # blog.tag_template = "tag.html"
  # blog.calendar_template = "calendar.html"
 
  # Enable pagination
    blog.paginate = true
-   blog.per_page = 10
-   blog.page_link = "page/{num}"
+   blog.per_page = 20
+   blog.page_link = "/{num}"
 
  # Custom categories
    blog.custom_collections = {
@@ -61,6 +60,14 @@ activate :blog do |blog|
    }
 end
 
+page "/feed.xml", layout: false
+
+
+# Disqus commentaires
+
+activate :disqus do |d|
+  d.shortname = 'donpadre' # Remplacer par votre nom Disqus 
+end
 
 
 
@@ -84,8 +91,15 @@ end
 ###
 # Helpers
 ###
+helpers do
+  def find_author(author_slug)
+    author_slug = author_slug.downcase
+    result = data.authors.select {|author| author.keys.first == author_slug }
+    raise ArgumentError unless result.any?
+    result.first
+  end
+end
 
-set :relative_link, true
 
 # Methods defined in the helpers block are available in templates
 # helpers do

@@ -3,8 +3,8 @@ header
   / Check if it's the homepage
   - if current_page.url == '/'
     = image_tag "/images/plage.jpg", alt: "Grande Plage du Sillon, Saint-Malo"
-    p lang="us" = current_page.data.slogan_sup
-    p = current_page.data.slogan
+    p = current_page.data.slogan_sup
+    p lang="us" = current_page.data.slogan
     h1 = current_page.data.title
   - else
     h1 = current_page.data.title

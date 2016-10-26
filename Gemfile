@@ -15,3 +15,6 @@ gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-deploy',  github: 'middleman-contrib/middleman-deploy', branch: 'master'
 gem 'slim',    '~> 3.0.2'
 gem "middleman-blog", "~> 4.0"
+gem "middleman-disqus"
+
+gem 'bourbon'
