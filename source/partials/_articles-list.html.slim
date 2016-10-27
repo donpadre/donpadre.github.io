@@ -1,38 +1,46 @@
-/ Variables for pagination
 - locals      = current_resource.metadata[:locals]
 - prev_page   = locals['prev_page']
 - page_number = locals['page_number']
 - num_pages   = locals['num_pages']
 - next_page   = locals['next_page']
 
-p Catégories :
-ul
-  li = link_to "Pop Culture Geek",  category_path("pop-culture-geek")
-  li = link_to "Linux", category_path("linux")
-  li = link_to "Série & Anime", category_path("serie-et-anime")
-  li = link_to "Insolute", category_path("insolite")
-  li = link_to "Conseils", category_path("conseils")
-  li = link_to "Lifehack", category_path("lifehack")
+.metas--categories
+  span.metas__label Catégories :
+  ul.metas__list
+    li.metas__list-item =  link_to "Pop Culture Geek",  category_path("pop-culture-geek"),   class: "metas__link"
+    li.metas__list-item =  link_to "Linux", category_path("linux"),   class: "metas__link"
+    li.metas__list-item =  link_to "Série & Anime", category_path("serie-et-anime"),   class: "metas__link"
+    li.metas__list-item =  link_to "Insolute", category_path("insolite"),   class: "metas__link"
+    li.metas__list-item =  link_to "Cinéma", category_path("cinema"),   class: "metas__link"
+    li.metas__list-item =  link_to "Lifehack", category_path("lifehack"),   class: "metas__link"
 
 ul
-- page_articles.each_with_index do |article, i|
-  li
-    h2 = link_to article.title, article
-    p
-    ' Publié le
-    = I18n.l article.date, format: '%e %b %Y'
-    '  par
-    = article.data.author
-    p = article.data.excerpt
-    = image_tag article.data.thumbnail
+  - page_articles.each_with_index do |article, i|
+    li.blog__list__item.row
+      - retina = retina_image(article.data.thumbnail)
+      = image_tag "/images/blog/thumbs/#{article.data.thumbnail}",
+        srcset:   "/images/blog/thumbs/#{article.data.thumbnail} 1x,
+                   /images/blog/thumbs/#{retina} 2x",
+        alt: "#{article.data.title}", class: "blog__list__img"
+      .blog__list__content
+        h2.blog__list__title
+          = link_to article.title, article, class: "blog__list__link"
+        p.metas__inline
+          ' Publié le
+          = I18n.l article.date, format: '%e %b %Y'
+          '  par
+          = article.data.author
+
+        p = article.data.excerpt
 
 
 / Show links if needed
-nav role= "navigation"
-  - if prev_page
-    = link_to '< Billets récents', prev_page
-  span
-    '  Page #{page_number}
-    '  sur #{num_pages}
-  - if next_page
-    = link_to 'Billets anciens >', next_page
+- if num_pages > 1
+  nav role= "navigation"
+    - if prev_page
+      = link_to '< Billets récents', prev_page
+    span
+      '  Page #{page_number}
+      '  sur #{num_pages}
+    - if next_page
+      = link_to 'Billets anciens >', next_page

@@ -41,14 +41,14 @@ activate :blog do |blog|
  # blog.day_link = "{year}/{month}/{day}.html"
    blog.default_extension = ".markdown"
 
- # blog.new_article_template = "sources/new-article.html.markdown"
+   blog.new_article_template = "source/new-article.html.markdow"
 
  # blog.tag_template = "tag.html"
  # blog.calendar_template = "calendar.html"
 
  # Enable pagination
-   blog.paginate = true
-   blog.per_page = 20
+   blog.paginate  = true
+   blog.per_page  = 10
    blog.page_link = "/{num}"
 
  # Custom categories
@@ -64,10 +64,16 @@ page "/feed.xml", layout: false
 
 
 # Disqus commentaires
-
 activate :disqus do |d|
-  d.shortname = 'donpadre' # Remplacer par votre nom Disqus 
+  d.shortname = 'donpadre' # Remplacer par votre nom Disqus
 end
+
+# Autoprefixer
+activate :autoprefixer do |config|
+    config.browsers = ['last 2 versions', 'Explorer >= 9']
+end
+
+
 
 
 
@@ -98,6 +104,20 @@ helpers do
     raise ArgumentError unless result.any?
     result.first
   end
+
+  # Retina
+  def retina_image(file_name)
+      if file_name
+          file_name.sub(/\.(jpg|png|gif)/, "@2x.\\1")
+      end
+  end
+
+  def set_hero_image(image)
+    styles = %{<style>.header{background-image: url('/images/backgrounds/small/#{image}');}
+    @media screen and (min-width: 25em){.header{background-image: url('/images/backgrounds/medium/#{image}');}}
+    @media screen and (min-width: 50em){.header{background-image: url('/images/backgrounds/#{image}');}}</style>}
+    return styles
+  end
 end
 
 
@@ -110,9 +130,46 @@ end
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
-  # activate :minify_css
 
-  # Minify Javascript on build
-  # activate :minify_javascript4
+  # Favicon
+  activate :favicon_maker do |f|
+    f.template_dir  = File.join(root, 'source')
+    f.output_dir    = File.join(root, 'build')
+    f.icons = {
+      "_favicon_template.png" => [
+        { icon: "apple-touch-icon-152x152-precomposed.png" },
+        { icon: "apple-touch-icon-144x144-precomposed.png" },
+        { icon: "apple-touch-icon-120x120-precomposed.png" },
+        { icon: "apple-touch-icon-114x114-precomposed.png" },
+        { icon: "apple-touch-icon-76x76-precomposed.png" },
+        { icon: "apple-touch-icon-72x72-precomposed.png" },
+        { icon: "apple-touch-icon-60x60-precomposed.png" },
+        { icon: "apple-touch-icon-57x57-precomposed.png" },
+        { icon: "apple-touch-icon-precomposed.png", size: "57x57" },
+        { icon: "apple-touch-icon.png", size: "57x57" },
+        { icon: "favicon-196x196.png" },
+        { icon: "favicon-160x160.png" },
+        { icon: "favicon-96x96.png" },
+        { icon: "favicon-32x32.png" },
+        { icon: "favicon-16x16.png" },
+        { icon: "favicon.png", size: "16x16" },
+        { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
+        { icon: "mstile-144x144", format: "png" },
+      ]
+    }
+  end
+
+  # Minification
+  #activate :minify_css
+  #activate :minify_javascript
+  #activate :minify_html, remove_input_attributes: false
+
+  # Gzip compression
+  #activate :gzip
+
+  # Use relative URLs
+  #activate :relative_assets
+
+  # Site map
+  #activate :sitemap, hostname: data.settings.site.url
 end

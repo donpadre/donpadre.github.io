@@ -2,7 +2,7 @@
 title:  Accueil
 title_seo: Don_padre | Accueil • Blogeur & dévellopeur front-end d'origine Guadeloupéen devenu Malouin par adoption.
 description: Don_padre | Blogeur & dévellopeur front-end d'origine Guadeloupéen devenu Malouin par adoption. Amateur de culture High-tech et de culture japonais. Passionné par le web, linux, les mangas, etc ...
-hero_image: plage.jpg
+hero_image: mockup.jpg
 slogan: Geek for life
 slogan_sup: Geek pour la vie
 ---
@@ -10,31 +10,40 @@ div role="main"
 
   = partial "partials/header"
 
-  h2 Mon première titre sur la page
-  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  .section.section--intro
+    .wrapper
+      .section
+        h2.section__title.ornement It's called 'taking advantage.' It's what gets you ahead in life.
+        p Now, when you do this without getting punched in the chest, you'll have more fun. Army had half a day. Now, when you do this without getting punched in the chest, you'll have more fun. I hear the jury's still out on science.
+        p
+          | I don't criticize you!
+          strong And if you're worried about criticism, sometimes a diet is the best defense.
+          em I'm afraid I just blue myself.
+          | Now, when you do this without getting punched in the chest, you'll have more fun.
+        h2 It's called 'taking advantage.' It's what gets you ahead in life.
+        p There's so many poorly chosen words in that sentence. Army had half a day. Oh, you're gonna be in a coma, all right. First place chick is hot, but has an attitude, doesn't date magicians. Guy's a pro. Now, when you do this without getting punched in the chest, you'll have more fun.
+        ol
+          li Well, what do you expect, mother?
+          li Guy's a pro.
+          li I care deeply for nature.
+        h3 Across from where?
+        p I'm a monster. What's Spanish for "I know you speak English?" I don't understand the question, and I won't respond to it. Michael! Get me a vodka rocks. And a piece of toast. I hear the jury's still out on science.
+        ul
+          li Across from where?
+          li Guy's a pro.
+          li Marry me.
+        p I'm a monster. No… but I'd like to be asked! It's a hug, Michael. I'm hugging you. We just call it a sausage. I hear the jury's still out on science.
+        p There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. Now, when you do this without getting punched in the chest, you'll have more fun.
+        p Oh, you're gonna be in a coma, all right. No… but I'd like to be asked! Bad news. Andy Griffith turned us down. He didn't like his trailer. Steve Holt!
+        p I've opened a door here that I regret. Michael! Across from where? No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide.
+        p As you may or may not know, Lindsay and I have hit a bit of a rough patch. That's what it said on 'Ask Jeeves.' That's why you always leave a note! Say goodbye to these, because it's the last time!
+        p I hear the jury's still out on science. Marry me. There's so many poorly chosen words in that sentence. What's Spanish for "I know you speak English?" No! I was ashamed to be SEEN with you. I like being with you.
+        p Whoa, this guy's straight? No! I was ashamed to be SEEN with you. I like being with you. It's a hug, Michael. I'm hugging you. It's called 'taking advantage.' It's what gets you ahead in life. I hear the jury's still out on science.
+        p Michael! No! I was ashamed to be SEEN with you. I like being with you. I've opened a door here that I regret. That's why you always leave a note! Bad news. Andy Griffith turned us down. He didn't like his trailer.
+        p There's so many poorly chosen words in that sentence. Guy's a pro. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense. Marry me.
+        p No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide. Bad news. Andy Griffith turned us down. He didn't like his trailer.
+        p What's Spanish for "I know you speak English?" Did you enjoy your meal, Mom? You drank it fast enough. I'm a monster. First place chick is hot, but has an attitude, doesn't date magicians. Whoa, this guy's straight?
 
-  p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  h3 Le camp
-  = image_tag "/images/avatar.png"
-
-  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  = link_to "Découvrir le camp", "/camp.html"
 
 
   /= partial "partials/gallerie", locals: {gallery: data.galleries.homepage}
-
-  h2 Mon deuxième titre sur la page
-  ul
-    - data.testimonials.each do |testimonial|
-      li
-        = image_tag "/images/accueil/#{testimonial.picture}"
-        p
-          span = testimonial.name
-          ' ,
-          span = testimonial.age
-          ' ,
-          span = testimonial.town
-        p = testimonial.message
-
-  //= partial "partials/call-to-action"

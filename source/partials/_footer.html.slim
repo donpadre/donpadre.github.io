@@ -1,28 +1,31 @@
-/ _footer.html.slim
-footer
-  div role="content-info"
+footer.footer
+  .wrapper
+    ul.footer__content role="content-info"
+      li.footer__content__item #{data.settings.author.address}
+      li.footer__content__item Tel : #{data.settings.author.phone}
+      li.footer__content__item
+        '  Mail :
+        a href="mailto:#{data.settings.author.email}" #{data.settings.author.email}
+      li.footer__content__item
+        ' Suivez nous sur
+        = link_to "Facebook", data.settings.social.facebook
+        '  et sur
+        = link_to "Twitter", data.settings.social.twitter
+
+    nav role="navigation"
+      ul
+        li = link_to "Accueil", "/"
+        li = link_to "Portfolio", "/portfolio.html"
+        li = link_to "Blog", "/blog.html"
+        li = link_to "Tutoriaux", "/tutoriaux.html"
+        li = link_to "A propos", "/apropos.html"
+        li = link_to "Contact", "/contact.html"
+        li = link_to "Mentions légales", "/mentions-legales.html"
 
     p
-      ' Suivez moi sur
-      = link_to "Facebook", data.settings.social.facebook
-    p
-      ' et sur
-      = link_to "Twitter", data.settings.social.twitter
-
-  nav role="navigation"
-    ul
-      li = link_to "Accueil", "/"
-      li = link_to "Portfolio", "/portfolio.html"
-      li = link_to "Blog", "/blog.html"
-      li = link_to "Tutoriaux", "/tutoriaux.html"
-      li = link_to "A propos", "/apropos.html"
-      li = link_to "Contact", "/contact.html"
-      li = link_to "Mentions légales", "/mentions-legales.html"
-
-  p
-    '  &copy;
-    = Time.now.year
-    '
-    = link_to data.settings.author.name, "/"
-    '  - Design et développement :
-    = link_to data.settings.copyright.developer.name, data.settings.copyright.developer.url
+      '  &copy;
+      = Time.now.year
+      '
+      = link_to data.settings.author.name, "/"
+      '  - Design et développement :
+      = link_to data.settings.copyright.developer.name, data.settings.copyright.developer.url

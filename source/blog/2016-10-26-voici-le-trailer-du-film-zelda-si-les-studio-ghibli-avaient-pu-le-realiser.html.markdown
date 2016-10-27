@@ -3,8 +3,8 @@ title: Voici le trailer du film Zelda si les Studio Ghibli avaient pu le réalis
 title_seo: Fan trailer Film Zelda façon Studio Ghibli.
 description: Un petit fan trailer de zelda style Studio Ghibli.
 date: 2016-10-26 12:32 CEST
-hero_image: "blog/zelda.png"
-thumbnail:  "blog/thumbs/zelda.png"
+hero_image: "zelda.png"
+thumbnail:  "zelda.png"
 category: Cinéma
 excerpt: "Nous devons ce magnifique trailer et ses magnifiques illustrations de Zelda à un certain Matt Vince, un illustrateur free-lance qui travaille sur des projets allant aux publications Offset, au développement visuel pour les applications et au visuel  de jeux vidéo."
 author: olivier
