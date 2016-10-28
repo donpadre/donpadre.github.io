@@ -1,23 +1,47 @@
 ---
-title: Apropos
-title_seo: Don_padre | Contact • Me contacter.
-description: Pour me contacter vous avez le choix
-hero_image: plage.jpg
+title: A propos
+title_seo: Don_padre | A propos • Qui suis je ?
+description: Qui suis-je ?
+hero_image: olivier3.jpg
 ---
 div role="main"
 
   = partial "partials/header"
-  h2 Qui suis-je ?
-div
-  = image_tag "images/olivier.jpg", class:"avatar"
 
-p Je me présent Olivier MARIE-JOSEPH aka donpadre pour les intimes, je suis originaire de la Guadeloupe, j’ai 32 ans. Breton et Malouin d’adoption depuis bientôt un deux ans et demi. Je suis agent administratif et comptable de formation.
-p Actuellement,en formation au GRETA EST Bretagne de Saint-Malo dans BTS Services informatiques aux organisations option B solutions logicielles et applications métiers afin devenir à terme un dévellopeur web front-end.
-p Je suis passionné de technologie, de linux ainsi que de pop culture Geek et Otaku, je suis un grand amateur de &nbsp;bonne cuisine.&nbsp;Grand fan de Stargate SG-1 et de tout ces spin-offs, grand lecteur de mangas (Angel Hearts, Ken, Mobile Suite Gundam, …), amateur de déco et de bricolage.
+  .section
+    .wrapper.row
+      h4.section__title Qui suis-je ?
+      .section__content
+        p Je me présent <b>Olivier Marie-Joseph</b>  Donpadre pour les intimes ), 33 ans, je suis originaire de la Guadeloupe.
+        p Breton et Malouin d’adoption depuis bientôt un deux ans et demi. Je suis agent administratif et comptable de formation.
+        p Actuellement je suis en formation au <b>GRETA EST Bretagne</b> de Saint-Malo dans un <b><i>BTS Services informatiques aux organisations option B solutions logicielles et applications métiers</i></b> afin devenir à terme un dévellopeur web front-end.
 
-h2 Qu’est ce que donpadre.fr ?
-p Donpadre.fr est mon blog personnel, ici je partagerais avec vous toutes les choses que j’aime ou que je n’aime en générale, mes avis sur un peu de tous, mais en principe je parlerais de linux ,d’application, de high-tech, culture geek et otaku, de cuisine (des recettes de chez moi, d’ici ou d’ailleurs), de cinéma, de séries, d’actualités.
-p N’hésitez pas à participer ici à votre manière simplement en lisant, en commentant ou même en proposant vos articles.
+      .section__img
+        = image_tag "images/olivier.jpg", class:"avatar"
+
+  .section
+    .wrapper
+        h4.section__title Passion ?
+        p Je suis passionné :
+        ul
+          li les nouvelles technologies,
+          li de Linux, du monde libre  et Open Source,
+          li de Web Devellopement
+          li ainsi que de pop-culture Geek.
+
+        p je suis un grand amateur de &nbsp;bonne cuisine.&nbsp;Grand fan de Stargate SG-1 et de tout ces spin-offs, grand lecteur de mangas (Angel Hearts, Ken, Mobile Suite Gundam, …), amateur de déco et de bricolage.
+
+  .section
+    h4.section__title  Qu’est ce que donpadre.fr ?
+    .wrapper.row
+      .section__content.section__content--reverse
 
 
-  = partial "partials/contact"
+
+        p Donpadre.fr est mon blog personnel, ici je partagerais avec vous toutes les choses que j’aime ou que je n’aime en générale, mes avis sur un peu de tous, mais en principe je parlerais de linux ,d’application, de high-tech, culture geek et otaku, de cuisine (des recettes de chez moi, d’ici ou d’ailleurs), de cinéma, de séries, d’actualités.
+        p N’hésitez pas à participer ici à votre manière simplement en lisant, en commentant ou même en proposant vos articles.
+
+      .section__img
+        = image_tag "images/capture_site.jpg", class:"capture_site", width:"565px"
+
+      /= partial "partials/contact"
