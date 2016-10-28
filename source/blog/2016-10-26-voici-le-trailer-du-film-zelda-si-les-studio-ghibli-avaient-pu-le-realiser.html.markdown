@@ -14,7 +14,9 @@ Nous devons ce magnifique trailer et ses magnifiques illustrations de **Zelda** 
 
 ![](images/blog/zelda_trailer_01.jpg)
 
-[]: images/blog/zelda_trailer_01.jpg {: height="212" width="300"}
+![](images/blog/zelda_trailer_02.jpg)
+
+![](images/blog/zelda_trailer_03.jpg)
 
 Au premier visionnage de ce trailer on pense tout de suite au **Studio Ghibli** tant le travail fourni par Matt est soigné, le dessin et l'animation son juste magnifique. La bande orignal est juste un plaisir pour les oreilles, nous devons une partie de la BO à un certain **[Kyle Landry](https://youtu.be/oTmp4sukhKs?list=PLmhXyO5tP36bKSYFcieocx7_tmB82DPCw&t=163).**
 

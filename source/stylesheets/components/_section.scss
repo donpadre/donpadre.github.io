@@ -5,7 +5,7 @@
 // ------------------------------------
 
 .section {
-    clear  : both;
+    clear: both;
     padding: 4.5em 0 3em;
     //background: url("/images/backgrounds/texture-dirt.jpg") repeat-x;
     &--intro {
@@ -21,8 +21,8 @@
     }
 
     &__img {
-        display   : block;
-        margin-top: 1.5em;
+        display: block;
+        //margin-top: 1.5em;
         text-align: center;
     }
 
@@ -49,9 +49,9 @@
     }
 
     &__content--reverse {
-        float       : right;
+        float: right;
         margin-right: 0;
-        margin-left : 2.35765%;
+        margin-left: 2.35765%;
     }
 
     &__title {
@@ -61,5 +61,11 @@
         &:after {
             @extend %ornement;
         }
+    }
+
+    &__formulaire {
+        display: block;
+        //margin-top: 1.5em;
+        text-align: center;
     }
 }

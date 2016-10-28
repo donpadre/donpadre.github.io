@@ -1,5 +1,8 @@
 footer.footer
   .wrapper
+  <a class="twitter-timeline"  href="https://twitter.com/don_padre" data-widget-id="660577108515790848">Tweets de @don_padre</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
     ul.footer__content role="content-info"
       li.footer__content__item #{data.settings.author.address}
       li.footer__content__item Tel : #{data.settings.author.phone}
@@ -7,25 +10,25 @@ footer.footer
         '  Mail :
         a href="mailto:#{data.settings.author.email}" #{data.settings.author.email}
       li.footer__content__item
-        ' Suivez nous sur
-        = link_to "Facebook", data.settings.social.facebook
+        'Mes réseaux sociaux:
+        = link_to "Facebook", data.settings.social.facebook, target:"_blank"
         '  et sur
-        = link_to "Twitter", data.settings.social.twitter
+        = link_to "Twitter" , data.settings.social.twitter, target:"_blank"
 
-    nav role="navigation"
+    nav.footer__menu role="navigation"
       ul
-        li = link_to "Accueil", "/"
-        li = link_to "Portfolio", "/portfolio.html"
-        li = link_to "Blog", "/blog.html"
-        li = link_to "Tutoriaux", "/tutoriaux.html"
-        li = link_to "A propos", "/apropos.html"
-        li = link_to "Contact", "/contact.html"
-        li = link_to "Mentions légales", "/mentions-legales.html"
+        li.footer__menu__item = link_to "Accueil", "/"
+        li.footer__menu__item = link_to "Blog", "/blog.html"
+        li.footer__menu__item = link_to "Portfolio", "/portfolio.html"
+        li.footer__menu__item = link_to "Tutoriaux", "/tutoriaux.html"
+        li.footer__menu__item = link_to "A propos", "/apropos.html"
+        li.footer__menu__item = link_to "Contact", "/contact.html"
+        li.footer__menu__item = link_to "Mentions légales", "/mentions-legales.html"
 
-    p
+    p.footer__copyright
       '  &copy;
       = Time.now.year
       '
-      = link_to data.settings.author.name, "/"
-      '  - Design et développement :
-      = link_to data.settings.copyright.developer.name, data.settings.copyright.developer.url
+      = link_to data.settings.site.title, "/"
+      '  • Tous droits réservés • Design et développement :
+      = link_to data.settings.copyright.developer.name, data.settings.copyright.developer.url, target:"_blank"

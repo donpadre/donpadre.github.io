@@ -2,7 +2,7 @@
 title: A propos
 title_seo: Don_padre | A propos • Qui suis je ?
 description: Qui suis-je ?
-hero_image: olivier3.jpg
+hero_image: olivier4.jpg
 ---
 div role="main"
 
@@ -11,17 +11,23 @@ div role="main"
   .section
     .wrapper.row
       h4.section__title Qui suis-je ?
-      .section__content
-        p Je me présent <b>Olivier Marie-Joseph</b>  Donpadre pour les intimes ), 33 ans, je suis originaire de la Guadeloupe.
-        p Breton et Malouin d’adoption depuis bientôt un deux ans et demi. Je suis agent administratif et comptable de formation.
-        p Actuellement je suis en formation au <b>GRETA EST Bretagne</b> de Saint-Malo dans un <b><i>BTS Services informatiques aux organisations option B solutions logicielles et applications métiers</i></b> afin devenir à terme un dévellopeur web front-end.
+      .section__content.section__content--reverse
+        p Je me présent <b>Olivier Marie-Joseph</b> , 33 ans. Je suis originaire de la Guadeloupe et Malouin par adoption depuis bientôt deux ans et demi.
+        p Je suis Assistant comptable & administratif de formation. Mais me plaisant plus dans le metier de comptabilité, j'ai cherché à me reconvertir dans un metier qui ma toujours attiré.
+
+        p Actuellement je suis en formation au <b>GRETA EST Bretagne</b> de Saint-Malo dans un <b><i>"B.T.S. S.I.O. S.L.A.M."*</i></b> dans le but de devenir dévellopeur web front-end.
+
+        p <blockquote><i><b>*</b> Services informatiques aux organisations option B solutions logicielles et applications métiers.</i></blockquote>
 
       .section__img
-        = image_tag "images/olivier.jpg", class:"avatar"
+        = image_tag "images/olivier.jpg",
+             srcset:"images/olivier@1x.jpg 1x,
+                      images/olivier@2x.jpg 2x",
+             alt:"Photo d'Olivier Marie-Joseph", class:"apropos__photo"
 
   .section
+    h4.section__title Passion ?
     .wrapper
-        h4.section__title Passion ?
         p Je suis passionné :
         ul
           li les nouvelles technologies,
@@ -34,14 +40,16 @@ div role="main"
   .section
     h4.section__title  Qu’est ce que donpadre.fr ?
     .wrapper.row
-      .section__content.section__content--reverse
+      .section__content
 
+        p Donpadre.fr est mon blog personnel, ici je partagerais avec vous toutes les choses que j’aime mais aussi celle que je n’aime pas en générale.je parlerais de linux ,d’application, de high-tech, de Pop-culture, de cuisine (des recettes de chez moi, d’ici ou d’ailleurs), de cinéma, de séries, d’actualités.
 
-
-        p Donpadre.fr est mon blog personnel, ici je partagerais avec vous toutes les choses que j’aime ou que je n’aime en générale, mes avis sur un peu de tous, mais en principe je parlerais de linux ,d’application, de high-tech, culture geek et otaku, de cuisine (des recettes de chez moi, d’ici ou d’ailleurs), de cinéma, de séries, d’actualités.
         p N’hésitez pas à participer ici à votre manière simplement en lisant, en commentant ou même en proposant vos articles.
 
       .section__img
-        = image_tag "images/capture_site.jpg", class:"capture_site", width:"565px"
+        = image_tag "images/capture_site.jpg",
+             srcset:"images/capture_site@1x.jpg 1x,
+                      images/capture_site@2x.jpg 2x",
+             alt:"Capture du blog", class:"apropos__capture"
 
       /= partial "partials/contact"

@@ -1,9 +1,21 @@
-.avatar {
-    border               : 6px solid #ffffff;
-    height               : 350px;
-    width                : 350px;
-    -moz-border-radius   : 175px;
-    -webkit-border-radius: 175px;
-    box-shadow           : 0 0.1875em 0.4375em #ffffff;
-    text-align           : center;
+.apropos {
+    &__photo {
+        //border: 6px solid #ffffff;
+        //height               : 350px;
+        //width                : 350px;
+        -moz-border-radius: 175px;
+        -webkit-border-radius: 175px;
+        box-shadow: 0 0.1875em 0.4375em #000000;
+        text-align: center;
+    }
+
+    &__capture {
+        text-align: center;
+        box-shadow: 0 0.1875em 0.4375em #000000;
+        padding: auto;
+    }
+
+    &__skill {}
+
+    &__social {}
 }

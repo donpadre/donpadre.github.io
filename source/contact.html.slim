@@ -1,12 +1,38 @@
 ---
 title: Contact
 title_seo: Don_padre | Contact • Me contacter.
-description: Pour me contacter vous avez le choix
-hero_image: contact.jpg
+description: Pour me contacter vous avez le choix.
+hero_image: mailbox.jpg
 ---
 div role="main"
 
   = partial "partials/header"
 
+  .section
+    .wrapper.row
+      h1.section__title Me Contacter
+      .section__content
 
-  = partial "partials/contact"
+        p.tagline Vous avez un projet de site internet dont vous aimeriez parler ?
+        p Vous êtes à la recherche d'un web developpeur front-end pour un projet ?
+        p Vous avez une question sur un sujet du blog ou de son contenun, veuillez alors utilisez le formulaire de contact ci-contre.
+        p Vous pouvez aussi me contacter par téléphone, email ou via mes réseaux sociaux.
+
+        p
+          i.fa.fa-phone
+          a href="tel:#{data.settings.author.phone}"  #{data.settings.author.phone}
+        p
+          i.fa.fa-envelope
+          a href="mailto:#{data.settings.author.email}"  #{data.settings.author.email}
+        p
+          i.fa.fa-twitter
+          = link_to "Twitter", data.settings.social.twitter
+        p
+          i.fa.fa-github
+          = link_to "Github", data.settings.social.github
+        p
+          i.fa.fa-facebook
+          = link_to "Facebook", data.settings.social.facebook
+
+      .section__formulaire
+        = partial "partials/formulaire"

@@ -1,0 +1,25 @@
+{
+  "name": "donpadre.github.io",
+  "version": "1.0.0",
+  "description": "middleman blog",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-responsive-images": "^0.0.3"
+  },
+  "devDependencies": {
+    "gulp-responsive-images": "0.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donpadre/donpadre.github.io.git"
+  },
+  "author": "olivier marie-joseph <olivier@donpadre.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donpadre/donpadre.github.io/issues"
+  },
+  "homepage": "https://github.com/donpadre/donpadre.github.io#readme"
+}
