@@ -42,7 +42,7 @@ activate :blog do |blog|
     # blog.day_link = "{year}/{month}/{day}.html"
     blog.default_extension = '.markdown'
 
-    blog.new_article_template = 'source/new-article.html.markdown'
+    # blog.new_article_template = 'source/new-article.html.markdown'
 
     # blog.tag_template = "tag.html"
     # blog.calendar_template = "calendar.html"
@@ -115,6 +115,16 @@ helpers do
         @media screen and (min-width: 25em){.header{background-image: url('/images/backgrounds/medium/#{image}');}}
         @media screen and (min-width: 50em){.header{background-image: url('/images/backgrounds/#{image}');}}</style>}
         styles
+    end
+
+    def image_res(path, params = {})
+        blog_prefix = blog_controller.try(:options).try(:prefix).try(:gsub, '/', '')
+        if current_path =~ /^#{blog_prefix}/
+            classes = params[:class].try(:split, ' ') || []
+            classes << 'responsive__img'
+        end
+        params[:class] = classes.try(:join, '')
+        super(path, params)
     end
 end
 

@@ -12,11 +12,11 @@ author: olivier
 
 Nous devons ce magnifique trailer et ses magnifiques illustrations de **Zelda** à un certain **[Matt Vince](http://www.mattvince.com/info/),** un _illustrateur free-lance_ qui travaille sur des projets allant aux publications Offset, au développement visuel pour les applications et au visuel de jeux vidéo.
 
-![](images/blog/zelda_trailer_01.jpg)
+![Affiche du trailer façon studio Ghibli](images/blog/zelda_trailer_01.jpg){:class="responsive__img"}
 
-![](images/blog/zelda_trailer_02.jpg)
+![Affiche avec Link](images/blog/zelda_trailer_02.jpg){:class="responsive__img"}
 
-![](images/blog/zelda_trailer_03.jpg)
+![Affiche avec Ganondorf](images/blog/zelda_trailer_03.jpg){:class="responsive__img"}
 
 Au premier visionnage de ce trailer on pense tout de suite au **Studio Ghibli** tant le travail fourni par Matt est soigné, le dessin et l'animation son juste magnifique. La bande orignal est juste un plaisir pour les oreilles, nous devons une partie de la BO à un certain **[Kyle Landry](https://youtu.be/oTmp4sukhKs?list=PLmhXyO5tP36bKSYFcieocx7_tmB82DPCw&t=163).**
 
@@ -24,9 +24,11 @@ Franchement si un jour **Nintendo** doit faire un film sur ce jeu culte qu'est _
 
 Pour un concept qu'il a juste réalisé sur son temps libre, le travaille qu'il a fourni est juste remarquable, dommage que ça ne reste qu'a l'idée de concept.
 
-<iframe src="https://www.youtube.com/embed/Wxav9Jj7R68" allowfullscreen="allowfullscreen" width="720" height="480" frameborder="0">
+<div class="video__content">
+  <iframe src="https://www.youtube.com/embed/Wxav9Jj7R68" allowfullscreen="allowfullscreen" width="720" height="480" frameborder="0">
 </iframe>
+</div>
 
 Source poste : [tumblr – Matt Vince](http://matt--vince.tumblr.com/post/133757186344/studio-ghibli-x-legend-of-zelda-poster-concepts-i)
 
-Source bio : [Mattvince.com](http://www.mattvince.com/info/)
+Source bio : [Mattvince.com](http://www.mattvince.com/info/) ttp://www.mattvince.com/info/)

@@ -9,9 +9,9 @@ div.header
   / Check if it's the homepage
   - if current_page.url == '/'
       .wrapper
-      = image_tag "/images/logo/logo-home.png", srcset: "/images/logo/logo-home.png 1x, /images/logo/logo-home@2x.png 2x", class:"header__logo", alt: "No Wifi Summercamp, camp de vacances en plein air"
-      p.header__slogan = current_page.data.slogan_sup
+      = image_tag "/images/logo/logo-home.png", srcset: "/images/logo/logo-home.png 1x, /images/logo/logo-home@2x.png 2x", class:"header__logo", alt: "donpadre logo"
       p.header__title = current_page.data.slogan
+      p.header__slogan = current_page.data.slogan_sup
       h1.header__infos = title
   - else
     .wrapper
