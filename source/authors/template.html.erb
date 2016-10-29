@@ -1,0 +1,31 @@
+---
+title: Auteur
+hero_image: machine.jpg
+pageable : true
+per_page: 10
+---
+<div class="main">
+<%  author = find_author(author_slug) %>
+  <%= partial "partials/header" %>
+  <div class="section">
+    <div class="wrapper">
+      <div class="section__content--centered">
+        <img src="/images/authors/<%= author.photo %>" class="avatar" alt="Photo de <%= author.fullname %>"/>
+        <h1>
+          <%= author.fullname %>
+        </h1>
+        <p>
+          <b>Bio:</b> <%= author.bio %>
+        </p>
+          <%= author.site %>
+        <ul>
+          <% locals.author.socials.each do |social|%>
+            <li><%= social['twitter'] %></li>
+            <li><%= social['github'] %></li>
+            <li><%= social['facebook'] %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

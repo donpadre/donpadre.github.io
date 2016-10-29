@@ -29,6 +29,6 @@ Pour un concept qu'il a juste réalisé sur son temps libre, le travaille qu'il 
 </iframe>
 </div>
 
-Source poste : [tumblr – Matt Vince](http://matt--vince.tumblr.com/post/133757186344/studio-ghibli-x-legend-of-zelda-poster-concepts-i)
+Source poster : [tumblr – Matt Vince](http://matt--vince.tumblr.com/post/133757186344/studio-ghibli-x-legend-of-zelda-poster-concepts-i)
 
-Source bio : [Mattvince.com](http://www.mattvince.com/info/) ttp://www.mattvince.com/info/)
+Source bio : [Mattvince.com](http://www.mattvince.com/info/)

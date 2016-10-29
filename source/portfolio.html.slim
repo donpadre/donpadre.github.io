@@ -9,9 +9,9 @@ div role="main"
   = partial "partials/header"
 
   .section
-    .wrapper
+    .wrapper.row
+      .section__content
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-      - data.features.features.each do |feature|
-        = partial "partials/features", locals: { feature: feature}
+        - data.features.features.each do |feature|
+          = partial "partials/features", locals: { feature: feature}

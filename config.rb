@@ -4,6 +4,13 @@ require 'kramdown'
 # Page options, layouts, aliases and proxies
 ###
 
+data.authors.collect { |author| author.keys.first }.each do |author_slug|
+    proxy "/authors/#{author_slug}.html",
+          '/authors/template.html',
+          locals: { author_slug: author_slug },
+          ignore: true
+end
+
 # Per-page layout changes:
 #
 # With no layout
@@ -103,6 +110,16 @@ helpers do
         result = data.authors.select { |author| author.keys.first == author_slug }
         raise ArgumentError unless result.any?
         result.first
+    end
+
+    def articles_by_author(author)
+        sitemap.resources.select do |resource|
+            resource.data.author == author.name
+        end.sort_by { |resource| resource.data.date }
+    end
+
+    def author_path(author)
+        "/authors/#{author.keys.first}"
     end
 
     # Retina

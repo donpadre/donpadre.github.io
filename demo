@@ -6,3 +6,12 @@ dem- data.features.features.each do |feature|
     span = feature.url
     p = feature.tech
     p = feature.description
+
+
+    ul
+      - blog.articles.each do |article|
+        li
+          = link_to article.path,  :relative => true do
+            = image_tag "/images/blog/thumbs/#{article.data.thumbnail}", class:"thumbs"
+          end
+          .metas
