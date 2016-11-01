@@ -1,0 +1,1 @@
+$(function(){var i={init:function(){$("#portfoliolist").mixItUp({selectors:{target:".folio",filter:".filter"},load:{filter:".app, .card, .icon, .ill, .logotype, .web"}})}};i.init()});
