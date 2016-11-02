@@ -1,12 +1,12 @@
 ---
-hero_image: blog.jpg
+hero_image: ring-binder.jpg
 pageable : true
 per_page: 10
 ---
-div role="main"
+main role="main"
 
-  = partial "partials/header", locals: {title: category}
+ = partial "partials/header", locals: {title: category}
 
-  = partial "partials/articles-list"
-
-  /= partial "partials/call-to-action"
+ .section
+   .wrapper
+     = partial "partials/articles-list"

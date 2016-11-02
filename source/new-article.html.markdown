@@ -1,10 +1,11 @@
 ---
-title: <%= @title %>
-title_seo:
-date: <%= @date %>
-hero_image:
+title: '<%= @title %>'
+title_seo: 
+date: '<%= @date %>'
+hero_image: 
 thumbnail:
-category:
+category: 
 excerpt:
-author:
+author: 
+hide_from_sitemap: true
 ---

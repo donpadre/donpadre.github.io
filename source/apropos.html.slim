@@ -4,7 +4,7 @@ title_seo: Don_padre | A propos • Qui suis je ?
 description: Qui suis-je ?
 hero_image: olivier4.jpg
 ---
-div role="main"
+main role="main"
 
   = partial "partials/header"
 
@@ -13,27 +13,63 @@ div role="main"
       h2.section__title Qui suis-je ?
       .section__content.section__content--reverse
         p Je me présent <b>Olivier Marie-Joseph</b> , 33 ans. Je suis originaire de la <b>Guadeloupe</b> et <b>Malouin</b> par adoption depuis bientôt deux ans et demi.
-        p Je suis <b>Assistant comptable & administratif</b> de formation et étant autodidacte en <i>administration système</i> sous <i>Linux</i> et en <i>Web Dévellopement</i>, et ne me plaisant plus dans le metier de comptabilité & l'administratatif, j'ai cherché à me reconvertir dans un metier qui ma toujours attiré.
+        p Je suis <b>Assistant comptable & administratif</b> de formation, étant autodidacte en <i>administration système</i> sous <i>Linux</i> et en <i>Web Dévellopement</i>, et ne trouvant de poste comme agent comptabilité & l'administratatif dans mon secteur, j'ai cherché à me reconvertir dans un secteur qui ma toujours attiré en effectuent une formation.
 
-        p C'est pour cela que j'éffectue, actuellement une formation au <b>GRETA EST Bretagne</b> de Saint-Malo dans un <b><i>"B.T.S. S.I.O. S.L.A.M."*</i></b> dans le but de devenir dévellopeur web front-end.
+        p J'ai franchi le cap de ma reconvertion cette année, en m'inscrivant dans <b><i>"B.T.S. S.I.O. S.L.A.M."*</i></b> dans le but de devenir dévellopeur web front-end au <b>GRETA EST Bretagne</b>.
 
         h3 Curriculum vitae
         p
-          = link_to "/CV_marie-joseph_olivier__web_devellopeur.docx", :relative => true  do
-            = image_tag "images/docx.png", class:"icon", target:"_blank"
+          = link_to "/CV_marie-joseph_olivier__web_devellopeur.docx", target:"_blank", :relative => true  do
+            = image_tag "/images/icones/doc.svg", class:"icon", width:"70", alt:"Curriculum vitae au format Word: 162ko"
           end
 
-          = link_to "/CV_marie-joseph_olivier__web_devellopeur.pdf", :relative => true  do
-            = image_tag "images/pdf.png", class:"icon", target:"_blank"
+          = link_to "/CV_marie-joseph_olivier__web_devellopeur.pdf", target:"_blank", :relative => true  do
+            = image_tag "/images/icones/pdf.svg", class:"icon", width:"70", alt:"Curriculum vitae au format  PDF: 800ko"
           end
-
-
 
       .section__img
         = image_tag "/images/pages/apropos/olivier.jpg",
              srcset:"/images/pages/apropos/olivier@1x.jpg 1x,
                       /images/pages/apropos/olivier@2x.jpg 2x",
              alt:"Photo d'Olivier Marie-Joseph", class:"apropos__photo"
+
+  .section
+    .wrapper
+      h2.section__title Compétences
+      .section__content
+       .development-wrapper
+          h3 Dévellopement
+          ul.skills-bar-container
+            li
+              .progressbar-title
+                h4 HTML5
+                span#html-pourcent.percent
+              .bar-container data-percent="95"
+                span#progress-html.progressbar
+            li
+              .progressbar-title
+                h4 CSS / SASS
+                span#css-pourcent.percent
+              .bar-container data-percent="75"
+                span#progress-css.progressbar
+            li
+              .progressbar-title
+                h4 JavaScript
+                span#javascript-pourcent.percent
+              .bar-container data-percent="60"
+                span#progress-javascript.progressbar
+            li
+              .progressbar-title
+                h4 PHP
+                span#php-pourcent.percent
+              .bar-container data-percent="55"
+                span#progress-php.progressbar
+
+
+      .section__content
+        h3 Logiciels
+        ul.software
+          li
 
   .section
     .wrapper

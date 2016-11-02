@@ -3,10 +3,8 @@
   fullname: Olivier Marie-Joseph
   photo: olivier.jpg
   bio: Blogeur et Web dévellopeur Front-end originaire de la Guadeloupe expatrié en France métropole. Amateur de culture High-tech et de culture japonais.
-  site:
-    -name: Donpadre.fr
-    -url: http://www.donpadre.fr
-  socials:
-    -twitter: don_padre
-    -github: donpadre
-    -facebook: donp971
+  site_name: Donpadre.fr
+  site_url: http://www.donpadre.fr
+  twitter: don_padre
+  github: donpadre
+  facebook: donp971

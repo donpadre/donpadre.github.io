@@ -1,10 +1,10 @@
   .contactform
-    form#contactForm action="/confirm" method="post"
+    form#contactForm action="https://formspree.io/olivier@donpadre.fr" method="post"
       input name="form-name" type="hidden" value="contactForm" /
       input autofocus="" name="nom" placeholder="Nom" required="" type="text" /
-      input name="email" placeholder="Email" type="email" /
+      input name="_replayto" placeholder="Email" type="email" /
       br/
       br/
       textarea cols="50" name="message" rows="4"
       br /
-      button name="submit" type="submit"  Envoyer le message/
+      input name="submit" type="submit"  Envoyer le message/

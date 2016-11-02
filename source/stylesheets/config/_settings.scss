@@ -25,13 +25,14 @@ $small-to-medium: new-breakpoint(min-width $small max-width $medium - 1); // ---
 // Colors
 // ----------------------------------------------------------------------------
 // Typography colors
-$color-body: #221E1D;
+$color-body: #666;
 $color-heading: #A27D2D;
 $color-link: #F24250;
 $color-navbar-link: #000000; // Shades
 $color-grey-neutral: #969696;
 $color-grey-tint: #8D938C;
 $color-grey-dark: #ffffff;
+$color-white: #ffffff;
 $color-grey-darker: #4E4D45; // Brand colors
 $color-primary: #A27D2D;
 $color-secondary: #BD5800;
@@ -45,7 +46,7 @@ $color-navbar-lighter: #ffffff; // ---------------------------------------------
 // Font-family
 $font-stack-serif: "Garamond", Helvetica, Arial sans-serif;
 $font-stack-sans: "Open Sans", Helvetica, Arial sans-serif;
-$font-stack-heading: "Bitter", Garamond, serif; // Font weight
+$font-stack-heading: "Roboto", Garamond, serif; // Font weight
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 700; // Font Sizes in px, let em($font-siez-x) do the maths

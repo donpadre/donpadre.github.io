@@ -5,8 +5,8 @@ pageable : true
 per_page: 10
 ---
 <div class="main">
-<%  author = find_author(author_slug) %>
   <%= partial "partials/header" %>
+  <%  author = find_author(author_slug) %>
   <div class="section">
     <div class="wrapper">
       <div class="section__content--centered">
@@ -15,15 +15,15 @@ per_page: 10
           <%= author.fullname %>
         </h1>
         <p>
-          <b>Bio:</b> <%= author.bio %>
+          <b>Bio:</b> <br />  <%= author.bio %>
         </p>
-          <%= author.site %>
+        <p> 
+          Site web: <a href="<%= author.site_url  %>"><%= author.site_name  %></a>
+        </p>
         <ul>
-          <% locals.author.socials.each do |social|%>
-            <li><%= social['twitter'] %></li>
-            <li><%= social['github'] %></li>
-            <li><%= social['facebook'] %></li>
-          <% end %>
+            <li>Twitter: <a href="https://twitter.com/<%= author.twitter %>"><%= author.twitter %></a></li>
+            <li>Github: <a href="https://github.com/<%= author.github %>"><%= author.github %></a></li>
+            <li>Facebook: <a href="https://www.facebook.com/<%= author.facebook %>/timeline"><%= author.facebook %></a></li>
         </ul>
       </div>
     </div>

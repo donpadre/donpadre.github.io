@@ -1,17 +1,14 @@
 // Import Bourdon and Neat
+@import '../../node_modules/sass-material-colors/sass/sass-material-colors';
 @import "bourbon";
-@import "neat";
-// Import Settings
+@import "neat"; // Import Settings
 @import "config/settings";
-@import "config/grid";
-// Import Base files
+@import "config/grid"; // Import Base files
 @import "base/normalize";
-@import "base/typography";
-// Import Librairies
+@import "base/typography"; // Import Librairies
 @import "lib/buttons";
 @import "lib/form";
-@import "lib/helpers";
-// Import Parts
+@import "lib/helpers"; // Import Parts
 @import "components/navbar";
 @import "components/header";
 @import "components/section";
@@ -23,5 +20,6 @@
 @import "components/tutoriaux";
 @import "components/footer";
 @import "components/video_embed";
-// Import Pages
+@import "components/avatar"; // Import Pages
+@import "components/social"; // Import Pages
 @import "pages/site";

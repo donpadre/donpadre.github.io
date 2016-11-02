@@ -1,3 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+$main-font: 'PT Sans', sans-serif; // Colors
+$text-color: #444;
+$title-color: #3c3c3c;
+$bg-color: #f9f9f9;
+$experience-bg-color: #e74c3c;
+$experience-content-bg-color: yellow;
+$progressbar-bg: #ececec;
+$progressbar-color: #34495e;
+
 .apropos {
     &__photo {
         //border: 6px solid #ffffff;
@@ -15,7 +25,47 @@
         padding: auto;
     }
 
-    &__skill {}
+    &__dev-bg {
+        background: url('');
+    }
+}
 
-    &__social {}
+.skills-bar-container {
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+
+    li {
+        width: 100%;
+        margin-bottom: 20px;
+
+        .progressbar-title {
+            color: $title-color;
+            margin-bottom: 5px;
+
+            h3 {
+                display: inline-block;
+            }
+
+            .percent {
+                position: absolute;
+                right: 20px;
+                font-size: 1.1em;
+            }
+        }
+
+        .bar-container {
+            background: $progressbar-bg;
+            position: relative;
+            width: 100%;
+            height: 10px;
+
+            .progressbar {
+                background: $progressbar-color;
+                position: absolute;
+                width: 0;
+                height: 100%;
+            }
+        }
+    }
 }

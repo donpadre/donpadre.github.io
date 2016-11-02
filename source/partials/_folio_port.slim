@@ -1,0 +1,10 @@
+
+  /! portporto item
+  .mod.portfolio__item.branding
+    .portfolio__image
+      = image_tag "/images/portfolio/#{porto.picture}"
+    .project-overlay
+      .project__info
+        i.fa.fa-search
+        h3.project-name #{porto.projetname}
+        p #{porto.description}

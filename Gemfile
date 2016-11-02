@@ -10,17 +10,20 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
 gem 'kramdown', '~> 1.12'
+gem 'bourbon'
+gem 'neat'
 gem 'middleman'
 gem 'middleman-livereload'
 gem 'middleman-compass'
+gem 'sass-material-colors'
 gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 gem 'slim', '~> 3.0.2'
 gem 'middleman-blog'
 gem 'middleman-disqus'
-
-gem 'bourbon'
-gem 'neat'
+gem 'middleman-minify-html'
 gem 'middleman-autoprefixer'
 gem 'middleman-favicon-maker'
 gem 'middleman-protect-emails'
 gem 'middleman-sitemap'
+gem 'middleman-search_engine_sitemap'
+gem 'gzip'

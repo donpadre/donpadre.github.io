@@ -1,0 +1,9 @@
+div class=("folio #{ oeuvre.clas }") data-cat="#{ oeuvre.cat }" data-bound="" style=("display: inline-block;")
+ .folio-wrapper
+  = image_tag "/images/portfolio/#{oeuvre["picture"]}", class:"folio-img"
+
+  .label
+   .label-text
+     a.text-title = oeuvre["projetname"]
+     span.text-category = oeuvre["category"]
+   .label-bg

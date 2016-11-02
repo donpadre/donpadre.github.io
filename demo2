@@ -1,0 +1,18 @@
+div class=("portfolio web") data-cat="web" data-bound="" style=("display: inline-block;")
+ .portfolio-wrapper
+  img alt="" class="portfolio-img"  src="/images/portfolio/capture_site.jpg"  /
+  .label
+    .label-text
+      a.text-title Bird Document
+      span.text-category Site Internet
+    .label-bg
+
+    div class=("portfolio  #{ oeuvre.metatype }") data-cat="#{ oeuvre.cat }" data-bound="" style=("display: inline-block;")
+     .portfolio-wrapper
+      = image_tag "/images/portfolio/#{oeuvre["picture"]}", class:"portfolio-img"
+
+      .label
+       .label-text
+         a.text-title = oeuvre["projetname"]
+         span.text-category = oeuvre["category"]
+       .label-bg

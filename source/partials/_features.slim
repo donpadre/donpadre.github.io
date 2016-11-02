@@ -1,12 +1,20 @@
-.feature
-  = image_tag "/images/portfolio/#{feature["picture"]}"
+.wrapper.row
+  .section__img.portfolio__img
+    = image_tag "/images/portfolio/#{feature["picture"]}"
 
-  h3 = feature["name"]
-  span
-    i class="fa fa-link"
-    = link_to feature["url"], feature["url"]
-  ul
-    -feature["tech"].each do |feat|
-     li
-       = feat
-  p = feature["description"]
+  .section__content
+    h3.portfolio__title = feature["name"]
+    /span.portfolio__link
+
+      /i class="fa fa-link"
+      /= link_to feature["url"], feature["url"]
+
+    /br /
+    span.portfolio__type <b>Application ou technologie utilisé:</b>
+    ul.portfolio__list
+      -feature["tech"].each do |feat|
+       li.portfolio__item
+         = feat
+
+    span.portfolio__description <b>Description:</b>
+    p = feature["description"]

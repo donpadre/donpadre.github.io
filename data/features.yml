@@ -1,18 +1,29 @@
 features:
 - name: Donpadre
   url: https://www.donpadre.fr
+  type: Site Internet
+  metatype: .siteweb
   tech:
     - Middleman (Framework Ruby)
     - HTML5, CSS, JS
     - Responsive, compatible Desktop, Tablette, Mobile.
     - Ngnix (Proxy HTTP, HTTPS)
-  description: Refonte  total de mon blog personnel. Passage de Wordpress à Middleman. 
-  picture: capture_01.png
+  description: Refonte  total de mon blog personnel. Passage de Wordpress à Middleman.
+  picture: capture_site.jpg
 - name: Overlay Stream System
   url: https://gitlab.com/donpadre
+  type: Application web
+  metatype: .appweb
   tech:
     - NodeJs
     - HTML5, CSS, JS
     - Ngnix (Proxy HTTP, HTTPS)
   description: Solution de titre, et autre effet visuel pour stream twitch, youtube ou podcast video, écrit en HTML5, CSS, Js , utilise NodeJs comme moteur d'execution serveur. Fork de la solution de titrage de GeekInc.
   picture: capture_02.png
+- name: Pochette - freestyle - Chanson du mwenka
+  type: Illustration
+  metatype: .illu
+  tech:
+    - gimp
+  description: Réalisation d'une pochette pour le single "Chanson du Mwenka" de @kalash971.
+  picture: pochette_Kalash_chanson_du_mwenka_01.jpg

@@ -181,8 +181,6 @@ configure :build do
             ]
         }
     end
-
-    # activate :gzip
 end
 
 # Minification
@@ -190,10 +188,15 @@ end
 # activate :minify_javascript
 # activate :minify_html, remove_input_attributes: false
 
-# Gzip compression
-
 # Use relative URLs
 activate :relative_assets
 
 # Site map
 # activate :sitemap, hostname: data.settings.site.url
+set :url_root, 'http://donpadre.github.io'
+
+activate :search_engine_sitemap
+
+# activate :gzip
+# Gzip compression
+activate :gzip

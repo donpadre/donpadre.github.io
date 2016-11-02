@@ -1,0 +1,29 @@
+.portfolio {
+    &__wrapper {
+        overflow: hidden;
+        position: relative !important;
+        //background: #666;
+        cursor: pointer;
+    }
+
+    &__img img {
+        width: 500px;
+        text-align: center;
+    }
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__list {
+        margin-top: 0;
+        margin-left: 25px;
+        list-style-type: disc;
+    }
+
+    &__link {}
+
+    &__type {}
+
+    &__description {}
+}

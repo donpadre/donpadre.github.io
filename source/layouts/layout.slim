@@ -8,8 +8,14 @@ html lang="fr"
     title = current_page.data.title_seo ? current_page.data.title_seo : data.settings.site.title  || data.settings.site.title
     meta name="description" content="#{current_page.data.description}"
     meta name="robots" content="index,follow"
-    link href='http://fonts.googleapis.com/css?family=Bitter:400,700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'
+    link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i|Open+Sans:400,400i,700|Roboto:400,400i,700" rel="stylesheet" /
+
     meta name="robots" content="index,follow"
+    script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"
+    = javascript_include_tag 'jquery.mixitup.min'
+    = javascript_include_tag 'all'
+
+
 
 
     = partial 'partials/favicon'
@@ -24,7 +30,6 @@ html lang="fr"
     == yield
 
     = partial "partials/footer"
-
-    = javascript_include_tag 'all'
     = javascript_include_tag 'social'
     = javascript_include_tag 'navbar'
+    script src="https://use.fontawesome.com/7bced12454.js" 

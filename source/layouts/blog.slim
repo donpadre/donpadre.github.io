@@ -9,13 +9,15 @@
 
         aside.metas__box
           - author = find_author(current_article.data.author)
-          = image_tag "/images/authors/#{author.photo}", class:"avatar", width:"99", height:"99"
-          h3.metas__author = author.name
+          = link_to "/authors/#{author.name}.html" do
+            = image_tag "/images/authors/#{author.photo}", class:"metas__author__img", width:"99", height:"99"
+          end
+          h3.metas__author  = link_to author.fullname, "/authors/#{author.name}.html", class:"metas__link"
           p.metas__label.metas__label--small
             ' Publié le :
             span.metas__inline = I18n.l current_page.date, format: '%e %b %Y'
-          p.metas__label.metas__label--small
-            ' Dans :
+          p.metas__label.metas__label--small.metas__espace
+            '  Dans :
             span.metas__inline = current_article.data.category
 
         article.blog__article

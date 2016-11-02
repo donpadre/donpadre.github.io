@@ -4,14 +4,33 @@ title_seo: Don_padre | Portfolio • Mes dernières réalisations.
 description: Veuillez trouver ici tous mes réalisations ou participation à des projets.
 hero_image: computer.jpg
 ---
-div role="main"
+main role="main"
 
-  = partial "partials/header"
+  /= partial "partials/header"
 
   .section
-    .wrapper.row
-      .section__content
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    .wrapper
 
-        - data.features.features.each do |feature|
-          = partial "partials/features", locals: { feature: feature}
+        h1.section__title Mes travaux.
+        p Vous trouverez ici tous mes travaux clients ou projets personnels. Si vous avez des questions ou un projet dont vous aimeriez discuter, contactez moi.
+
+        div class=("port")
+          ul id=("filters") class=("clearfix")
+            li
+              span.filter.active data-filter=".app, .card, .icon, .ill, .logotype, .web"  All
+            li
+              span.filter data-filter=".app"  Application Web
+            li
+              span.filter data-filter=".card"  Carte de visite
+            li
+              span.filter data-filter=".icon"  Icones
+            li
+              span.filter data-filter=".ill"  Illustration
+            li
+              span.filter data-filter=".logotype"  Logo
+            li
+              span.filter data-filter=".web"  Web
+
+          div id=("portfoliolist")
+           - data.portfolio.realisations.each do |oeuvre|
+             = partial "partials/gallerie", locals: { oeuvre: oeuvre}

@@ -38,10 +38,6 @@
              @include span-columns(9);
         }
     }
-
-    &__imgresponsive-img {
-        background: red;
-    }
 }
 // Styles for the blog article
 // ------------------------------------
@@ -151,10 +147,16 @@
 
     &__author__img {
         border-radius: 50%;
+        //border: 1px solid #ffffff;
+        box-shadow: 0 0.1875em 0.250em #666;
     }
 
     &__link {
         color: $color-grey-neutral;
+    }
+
+    &__espace {
+        padding-left: 0.313em;
     }
 }
 

@@ -1,0 +1,13 @@
+{
+  "name": "Mon application",
+  "description": "Une description courte de l'application",
+  "launch_path": "/",
+  "icons": {
+    "128": "/img/icone-128.png"
+  },
+  "developer": {
+    "name": "Votre nom ou celle de votre organisation",
+    "url": "http://votre-site-web.org"
+  },
+  "default_locale": "fr"
+}

@@ -4,11 +4,14 @@ title_seo: Don_padre | Tutoriaux • Mes dernières Tutoriaux sur Linux, Raspber
 description: Veuillez trouver ici tous mes différents.
 hero_image: pencils.jpg
 ---
-div role="main"
+main role="main"
 
   = partial "partials/header"
 
-  .section.section--intro
+  .section
     .wrapper
-
-        = partial "partials/gallerie", locals: {gallery: data.galleries.homepage}
+      .section
+        h2.section__title Page en construction
+        /= partial "partials/gallerie", locals: {gallery: data.galleries.homepage}
+        div.tuto__center
+          =image_tag "images/icones/underconstruction.svg", width:"225em", height:"225em"
