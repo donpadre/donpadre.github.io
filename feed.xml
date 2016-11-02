@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2016-10-29T02:17:00+02:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Guadeloupe</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2016-10-29-guadeloupe/"/>
+    <id>http://blog.url.com/blog/2016-10-29-guadeloupe/</id>
+    <published>2016-10-29T02:17:00+02:00</published>
+    <updated>2016-11-02T12:36:52+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h1 id="un-petit-teste-dimages-responsive-en-markdown"&gt;Un petit teste d'images responsive en markdown&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src="../../images/Guadeloupe.svg" alt="my-image" class="responsive__img" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Voici le trailer du film Zelda si les Studio Ghibli avaient pu le réaliser !!</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2016-10-26-voici-le-trailer-du-film-zelda-si-les-studio-ghibli-avaient-pu-le-realiser/"/>
+    <id>http://blog.url.com/blog/2016-10-26-voici-le-trailer-du-film-zelda-si-les-studio-ghibli-avaient-pu-le-realiser/</id>
+    <published>2016-10-26T12:32:00+02:00</published>
+    <updated>2016-10-29T09:01:41+02:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Nous devons ce magnifique trailer et ses magnifiques illustrations de &lt;strong&gt;Zelda&lt;/strong&gt; à un certain &lt;strong&gt;&lt;a href="http://www.mattvince.com/info/"&gt;Matt Vince&lt;/a&gt;,&lt;/strong&gt; un &lt;em&gt;illustrateur free-lance&lt;/em&gt; qui travaille sur des projets allant aux publications Offset, au développement visuel pour les applications et au visuel de jeux vidéo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/blog/zelda_trailer_01.jpg" alt="Affiche du trailer façon studio Ghibli" class="responsive__img" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/blog/zelda_trailer_02.jpg" alt="Affiche avec Link" class="responsive__img" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="../../images/blog/zelda_trailer_03.jpg" alt="Affiche avec Ganondorf" class="responsive__img" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Au premier visionnage de ce trailer on pense tout de suite au &lt;strong&gt;Studio Ghibli&lt;/strong&gt; tant le travail fourni par Matt est soigné, le dessin et l'animation son juste magnifique. La bande orignal est juste un plaisir pour les oreilles, nous devons une partie de la BO à un certain &lt;strong&gt;&lt;a href="https://youtu.be/oTmp4sukhKs?list=PLmhXyO5tP36bKSYFcieocx7_tmB82DPCw&amp;amp;t=163"&gt;Kyle Landry&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Franchement si un jour &lt;strong&gt;Nintendo&lt;/strong&gt; doit faire un film sur ce jeu culte qu'est &lt;em&gt;« Zelda »&lt;/em&gt;, il faut vraiment que ça ressemble à ce qu'a fait Matt ou au style du &lt;em&gt;Studio Ghibli.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour un concept qu'il a juste réalisé sur son temps libre, le travaille qu'il a fourni est juste remarquable, dommage que ça ne reste qu'a l'idée de concept.&lt;/p&gt;
+
+&lt;div class="video__content"&gt;
+  &lt;iframe src="https://www.youtube.com/embed/Wxav9Jj7R68" allowfullscreen="allowfullscreen" width="720" height="480" frameborder="0"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Source poster : &lt;a href="http://matt--vince.tumblr.com/post/133757186344/studio-ghibli-x-legend-of-zelda-poster-concepts-i"&gt;tumblr – Matt Vince&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source bio : &lt;a href="http://www.mattvince.com/info/"&gt;Mattvince.com&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Le gang des Antillais.</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2016-10-26-le-gang-des-antillais/"/>
+    <id>http://blog.url.com/blog/2016-10-26-le-gang-des-antillais/</id>
+    <published>2016-10-26T09:25:00+02:00</published>
+    <updated>2016-10-29T03:17:21+02:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Ce film raconte l'histoire de quatre Antillais fraîchement arrivé en métropole avec le &lt;strong&gt;BUMIDOM&lt;/strong&gt;* dans les années 1970, qui commettaient des voles à main armés dans Paris, afin de survivre.&lt;/p&gt;
+
+&lt;p&gt;Le Gang des antillais sortira, aux Antilles Guyane le 15 Novembre 2016, et en France métropolitain 30 Novembre 2016.&lt;/p&gt;
+
+&lt;div class="video__content"&gt;
+  &lt;iframe width="720" height="435" src="https://www.youtube.com/embed/wBEXw9dGgSA" frameborder="0" allowfullscreen=""&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Photo : &lt;a href="https://www.lgda-lefilm.com/"&gt;lgda-lefilm.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;* Bumidom (Bureau pour le développement des migrations dans les départements d'outre-mer)&lt;/strong&gt; : fut un organisme public français chargé d'accompagner l'émigration des habitants des départements d'outre-mer vers la France métropolitain.&lt;/p&gt;
+
+&lt;p&gt;Fondé en 1963, il disparaît en 1981 pour céder la place à l'Agence nationale pour l'insertion et la protection des travailleurs d'outre-mer (ANT), renommé Agence de l'outre-mer pour la mobilité ou &lt;strong&gt;LADOM&lt;/strong&gt; depuis 1992. Wikipedia : &lt;a href="https://fr.wikipedia.org/wiki/Bureau_pour_le_d%C3%A9veloppement_des_migrations_dans_les_d%C3%A9partements_d%27outre-mer"&gt;Lire plus&lt;/a&gt; )&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Comment utiliser « Bash sur Ubuntu pour Windows » avec Cmder (ComEmu) ?!</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2016-09-25-astuce-comment-utiliser-bash-sur-ubuntu-pour-windows-avec-cmder-comemu/"/>
+    <id>http://blog.url.com/blog/2016-09-25-astuce-comment-utiliser-bash-sur-ubuntu-pour-windows-avec-cmder-comemu/</id>
+    <published>2016-09-25T08:00:00+02:00</published>
+    <updated>2016-10-27T21:57:22+02:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="https://i1.wp.com/www.donpadre.fr/wp-content/uploads/2016/09/bash-windows.png?resize=720%2C302&amp;amp;ssl=1" alt="bash-windows" title="Bash sur Ubuntu pour Windows" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sous &lt;em&gt;Windows&lt;/em&gt; j’ai pris pour l’habitude d’utiliser &lt;strong&gt;Cmder&lt;/strong&gt; un émulateur d’invité de commande Linux, qui contient un Bash émuler pour faire du Web développement afin d’utiliser des technologies comme &lt;strong&gt;&lt;em&gt;Nodejs , __Sass, _Gulp, _Bower,&lt;/em&gt; &lt;em&gt;et&lt;/em&gt; &lt;em&gt;PHP-cli&lt;/em&gt;&lt;/strong&gt;, en ligne commande.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://i2.wp.com/www.donpadre.fr/wp-content/uploads/2016/09/cmder-bash-ubuntu-for-windows-10.png?resize=720%2C300&amp;amp;ssl=1" alt="cmder-bash-ubuntu-for-windows-10" title="Cmder avec Bash sur Ubuntu sur Windows" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Et je me suis posé la question comment lier &lt;strong&gt;Bash sur &lt;em&gt;Ubuntu&lt;/em&gt;&lt;/strong&gt; et &lt;em&gt;&lt;strong&gt;Cmder,&lt;/strong&gt; _en fouillant un peu sur les internet j’ai trouvé mon bonheur dans un Issues du &lt;strong&gt;Github&lt;/strong&gt;  officiel de _Cmder.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour cela nous allons mettre en place une nouvelle tâche appelé  &lt;strong&gt;« Bash::Ubuntu »&lt;/strong&gt; dans Cmder :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ouvrir les paramètres soit en cliquant sur les 3 barres en bas a droite de la fenêtre ou en utilisant la combinaison de touche &lt;strong&gt;&lt;em&gt;Win+Alt+P&lt;/em&gt;,&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Aller dans &lt;em&gt;&lt;strong&gt;Startup-&amp;gt;Tasks,&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Cliquer sur le bouton &lt;strong&gt;+&lt;/strong&gt; en bas à gauche afin d’ajouter une nouvelle tâche,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Choisir un nom pour votre tâche&lt;/strong&gt;,&lt;/li&gt;
+  &lt;li&gt;Dans &lt;strong&gt;Task parameters&lt;/strong&gt; rentrer cette ligne :
+&lt;em&gt;/icon « %USERPROFILE%\AppData\Local\lxss\bash.ico »&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Dans &lt;strong&gt;Commands&lt;/strong&gt; : rentrer cette ligne :
+&lt;em&gt;%windir%\System32\bash.exe ~ -c zsh -cur_console:p&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Sauvegarder votre tâche en cliquant sur &lt;strong&gt;Save setting&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Et voilà tout est près, vous pouvez utiliser cmder avec bash ubuntu pour windows.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://i1.wp.com/www.donpadre.fr/wp-content/uploads/2016/09/cmder-settings-1.png?resize=720%2C462&amp;amp;ssl=1" alt="cmder-settings" title="Paramètre de cmder" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Source splash : &lt;a href="https://ayesh.me/"&gt;Ayesh.me&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+</feed>
