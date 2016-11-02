@@ -1,7 +1,8 @@
 # settings.yml
 site:
   title: Don_padre
-  description: "Nous sommes un camp de vancances en pleine nature qui privilègie un retour aux sources en éloignant les nouvelles technologies le temps d'un séjour."
+  description: "Web développeur etblogueur originaire de la Guadeloupe, Malouin depuis bientôt deux ans. Amateur de Pop-culture, du Web, High-tech et de culture japonais. 
+"
   url: "http://donpadre.github.io"
 
 author:
@@ -14,6 +15,9 @@ social:
   facebook: "https://facebook.com/donp971"
   twitter: "https://twitter.com/don_padre"
   github: "https://github.com/donpadre"
+  dribbble: "https://dribbble.com/don_padre"
+  google: "https://plus.google.com/u/0/+OlivierMarieJoseph"
+  skype: "skype:olivier-mj?call"
 
 copyright:
   developer:

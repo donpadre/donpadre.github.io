@@ -26,6 +26,17 @@ main role="main"
           p
             i.fa.fa-envelope
             a href="mailto:#{data.settings.author.email}"  #{data.settings.author.email}
+          .social-buttons
+             a.social-button.b-facebook href="#{data.settings.social.facebook}" target="_blank" alt=" Suivez moi sur Facebook"
+               i.fa.fa-facebook
+             a.social-button.b-twitter href="#{data.settings.social.twitter}" target="_blank" alt=" Suivez moi sur Twitter"
+               i.fa.fa-twitter
+             a.social-button.b-google href="#{data.settings.social.google}" target="_blank" alt=" Suivez moi sur Google plus"
+               i.fa.fa-google
+             a.social-button.b-dribbble href="#{data.settings.social.dribbble}" target="_blank" alt=" Suivez moi sur Dribbble "
+               i.fa.fa-dribbble
+             a.social-button.b-skype href="#{data.settings.social.skype}" target="_blank" alt=" Discutons sur Skype "
+               i.fa.fa-skype
 
 
         .section__content
@@ -34,15 +45,3 @@ main role="main"
       .section
        .wrapper.row
          .section__content--centered
-
-           = link_to data.settings.social.twitter, target:"_blank" do
-             = image_tag "/images/icones/twitter.svg", class:"icon", width:"50", alt:"Twitter de @don_padre"
-           end
-
-           = link_to data.settings.social.github, target:"_blank" do
-             = image_tag "/images/icones/github.svg", class:"icon", width:"50", alt:"Gitbub de donpadre"
-           end
-
-           = link_to data.settings.social.facebook, target:"_blank" do
-             = image_tag "/images/icones/facebook.svg", class:"icon", width:"50", alt:"facebook de donpadre.fr"
-           end
